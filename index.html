@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaproszenie na Randkę</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 5vh 0; /* zmniejszone marginesy dla urządzeń mobilnych */
+            background-color: #FFC0CB; /* różowe tło */
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 6vw; /* większy nagłówek na mobilnych ekranach */
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 15px; /* większa przestrzeń na przyciskach */
+            font-size: 5vw; /* użycie jednostki względnej */
+            margin: 10px 0; /* marginesy pionowe */
+            cursor: pointer;
+            border-radius: 10px;
+            border: none;
+            width: 80%; /* większa szerokość przycisków */
+        }
+        #yes {
+            background-color: lightgreen;
+        }
+        #no {
+            background-color: lightcoral;
+        }
+        .hearts {
+            font-size: 8vw; /* większe serca na mobilnych ekranach */
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chcesz iść ze mną na randkę?</h1>
+
+    <!-- Serduszka jako emoji -->
+    <div class="hearts">❤️❤️❤️</div>
+
+    <button id="yes">Tak</button>
+    <button id="no">Nie</button>
+
+    <script>
+        document.getElementById("yes").addEventListener("click", function() {
+            alert("Świetnie! Nie mogę się doczekać!");
+        });
+
+        document.getElementById("no").addEventListener("click", function() {
+            alert("Nie, to nie jest opcja!");
+        });
+    </script>
+</body>
+</html>
